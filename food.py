@@ -1,4 +1,5 @@
 from turtle import Turtle
+from scoreboard import Scoreboard
 import random
 
 class Food(Turtle):
@@ -12,6 +13,7 @@ class Food(Turtle):
         self.refresh()
 
     def refresh(self):
+        Scoreboard().increase_score()
         random_x = random.randint(-280, 280)
         random_y = random.randint(-280, 280)
         self.goto(random_x, random_y)
