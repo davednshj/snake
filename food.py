@@ -13,7 +13,6 @@ class Food(Turtle):
         self.refresh()
 
     def refresh(self):
-        Scoreboard().increase_score()
         random_x = random.randint(-280, 280)
         random_y = random.randint(-280, 280)
         self.goto(random_x, random_y)
